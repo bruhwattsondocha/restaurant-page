@@ -41,22 +41,23 @@ h1, h2, h3, h4, h5, h6 {
 /* BODY */
 
 body {
-  background-image: url(./background-image.jpg);
+  background-image: url(./coffee-shop-background.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* background-color: rgba(0, 0, 0, 0.477); */
+  backdrop-filter: blur(2px);
+  backdrop-filter: brightness(50%);
 }
 
 /* HEADER */
 
 header {
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.324);
-  backdrop-filter: blur(10px);
+  height: 80px;
   padding: 0 4rem;
 
   display: flex;
@@ -70,6 +71,7 @@ header nav {
   justify-content: end;
   align-items: center;
   gap: 1rem;
+  font-size: 18px;
 }
 
 header .logo {
@@ -96,18 +98,21 @@ nav button:hover,
 
 #content {
   flex: 1;
+  padding: 2rem 10rem;
 }
 
+#content h1 {
+  color: white;
+  font-size: 128px;
+}
 /* FOOTER */
 
 footer {
-  background-color: rgba(0, 0, 0, 0.324);
-  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
 }
 
-.creds,
-.creds a {
+.credits,
+.credits a {
   color: rgb(0, 0, 0);
 }
