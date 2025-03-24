@@ -96,7 +96,7 @@ nav button:hover,
   text-decoration: none;
 }
 
-/* CONTENT */
+/* CONTENT HOME PAGE */
 
 #content {
   flex: 1;
@@ -129,4 +129,14 @@ footer {
 .credits,
 .credits a {
   color: rgb(0, 0, 0);
+}
+
+/* CONTENT DRINKS PAGE */
+
+#content {
+  border: 2px solid red;
+}
+
+.item-wrapper {
+  display: flex;
 }
