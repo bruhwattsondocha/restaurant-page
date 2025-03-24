@@ -45,6 +45,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* HEADER */
@@ -83,6 +87,27 @@ nav button {
   cursor: pointer;
 }
 
-nav button:hover {
+nav button:hover,
+.creds a:hover {
   text-decoration: none;
+}
+
+/* CONTENT */
+
+#content {
+  flex: 1;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgba(0, 0, 0, 0.324);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+}
+
+.creds,
+.creds a {
+  color: rgb(0, 0, 0);
 }
