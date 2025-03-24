@@ -52,6 +52,7 @@ body {
   /* background-color: rgba(0, 0, 0, 0.477); */
   backdrop-filter: blur(2px);
   backdrop-filter: brightness(50%);
+  color: rgb(235, 235, 235);
 }
 
 /* HEADER */
@@ -102,15 +103,13 @@ nav button:hover,
   padding: 2rem 10rem;
 }
 
-#content h1 {
-  color: white;
+#content .hero-text {
   font-size: 120px;
   line-height: 95%;
   width: 100%;
 }
 
-#content p {
-  color: white;
+#content .hero-subtext {
   font-size: 26px;
   margin-top: 16px;
 }
