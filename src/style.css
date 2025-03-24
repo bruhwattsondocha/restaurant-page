@@ -103,8 +103,17 @@ nav button:hover,
 
 #content h1 {
   color: white;
-  font-size: 128px;
+  font-size: 120px;
+  line-height: 95%;
+  width: 100%;
 }
+
+#content p {
+  color: white;
+  font-size: 26px;
+  margin-top: 16px;
+}
+
 /* FOOTER */
 
 footer {
