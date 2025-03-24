@@ -115,6 +115,11 @@ nav button:hover,
   margin-top: 16px;
 }
 
+#content .location {
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
 /* FOOTER */
 
 footer {
