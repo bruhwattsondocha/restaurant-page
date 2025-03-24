@@ -1,2 +1,2 @@
 import './style.css';
-alert('Hello!');
+console.log("Hello");
