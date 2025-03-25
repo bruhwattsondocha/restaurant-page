@@ -86,18 +86,13 @@ nav button {
   background: none;
   padding: 0 1rem;
 
-  text-decoration: underline 1px white;
   text-underline-offset: 4px;
   cursor: pointer;
 }
 
 .current-page {
   text-decoration: underline 4px #68a07c;
-}
-
-nav button:hover,
-.creds a:hover {
-  text-decoration: none;
+  color: #a1eabb;
 }
 
 /* CONTENT HOME PAGE */
@@ -130,6 +125,10 @@ nav button:hover,
 footer {
   display: flex;
   justify-content: center;
+}
+
+footer a {
+  color: inherit;
 }
 
 .credits {

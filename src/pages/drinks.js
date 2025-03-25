@@ -16,14 +16,6 @@ export const drawDrinksPage = () => {
   const drinksGridDiv = document.createElement('div');
   drinksGridDiv.classList.add('drinks-grid');
 
-  const highlightTab = (() => {
-    const tabs = document.querySelectorAll('button');
-    tabs.forEach(tab => {
-      if (tab.innerText === 'Drinks') {
-        tab.classList.add('current-page');
-      }
-    })
-  })();
 
   const createItem = (name, image, price) => {
 
