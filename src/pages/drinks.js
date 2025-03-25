@@ -2,6 +2,11 @@ import flatWhiteImage from '../img/flat-white.jpg';
 
 export const drawDrinksPage = () => {
   const contentDiv = document.querySelector('#content');
+  contentDiv.classList.add('drinks')
+
+  const drinksGridDiv = document.createElement('div');
+  drinksGridDiv.classList.add('drinks-grid');
+
 
   const createItem = (name, image, price) => {
 
@@ -13,7 +18,7 @@ export const drawDrinksPage = () => {
     itemImage.src = image;
     
     const itemName = document.createElement('p');
-    itemName.classList.add('item-description')
+    itemName.classList.add('item-name')
     itemName.innerText = name;
 
     const itemPrice = document.createElement('p');
@@ -24,7 +29,23 @@ export const drawDrinksPage = () => {
     itemContainer.appendChild(itemName);
     itemContainer.appendChild(itemPrice);
 
-    contentDiv.appendChild(itemContainer);
+    drinksGridDiv.appendChild(itemContainer);
   }
+
+  const heading = document.createElement('h1');
+  heading.classList.add('drinks-heading')
+  heading.innerText = 'Our drinks menu';
+
+  contentDiv.appendChild(heading);
+  contentDiv.appendChild(drinksGridDiv);
+
+  createItem('espresso', flatWhiteImage, 20);
+  createItem('americano', flatWhiteImage, 20);
+  createItem('cappucino', flatWhiteImage, 20);
+  createItem('latte', flatWhiteImage, 20);
+  createItem('raf coffee', flatWhiteImage, 20);
   createItem('flat white', flatWhiteImage, 20);
+  createItem('bumble coffee', flatWhiteImage, 20);
+  createItem('ice latte', flatWhiteImage, 20);
+  createItem('ice tonic', flatWhiteImage, 20);
 }

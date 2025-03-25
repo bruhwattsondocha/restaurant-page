@@ -135,18 +135,40 @@ footer {
 
 /* CONTENT DRINKS PAGE */
 
-#content {
-  /* border: 2px solid red; */
+.drinks-heading {
+  color: black;
+  color: white;
+  width: fit-content;
+  background-color: #34503e;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+#content.drinks {
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3rem;
+}
+
+.drinks-grid {
+  width: 70%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 0;
+  /* justify-items: center; */
 }
 
 .item-wrapper {
   width: 200px;
-  height: 300px;
+  height: 280px;
   display: flex;
   flex-direction: column;
-  background-color: #000000a1;
-  background-color: #7b593d;
-  color: rgb(255, 250, 250);
+  background-color: #FFF;
+  color: black;
   border-radius: 15px;
   font-weight: bold;
   text-transform: uppercase;
@@ -154,10 +176,18 @@ footer {
   gap: 1rem;
   align-self: center;
   align-items: center;
-  
+  text-align: center;
   /* padding: 2rem; */
 }
 
 .item-image {
   width: 200px;
+}
+
+.item-name {
+  font-size: 18px;
+}
+
+.item-price {
+  font-size: 14px;
 }
