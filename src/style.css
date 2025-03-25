@@ -128,8 +128,7 @@ footer {
   justify-content: center;
 }
 
-.credits,
-.credits a {
+.credits {
   color: rgb(0, 0, 0);
 }
 
@@ -150,16 +149,15 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 3rem;
+  /* gap: 3rem; */
 }
 
 .drinks-grid {
-  width: 70%;
   align-self: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 0;
-  /* justify-items: center; */
+  gap: 2rem 4rem;
+  margin: 3rem 0;
 }
 
 .item-wrapper {
@@ -177,11 +175,11 @@ footer {
   align-self: center;
   align-items: center;
   text-align: center;
-  /* padding: 2rem; */
 }
 
 .item-image {
   width: 200px;
+  border-radius: 15px;
 }
 
 .item-name {
@@ -190,4 +188,8 @@ footer {
 
 .item-price {
   font-size: 14px;
+}
+
+footer.drinks {
+  background-color: white;
 }
