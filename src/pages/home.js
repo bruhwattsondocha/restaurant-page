@@ -1,5 +1,5 @@
 export const drawHomePage = () => {
-  const contentPlace = document.querySelector('#content');
+  const contentDiv = document.querySelector('#content');
 
   const heroText = document.createElement('h1');
   heroText.innerText = "Specialty coffee with a nature's touch";
@@ -13,7 +13,7 @@ export const drawHomePage = () => {
   locationInfo.innerText = "We're located at 152 Greenway Ave, Willowbrook, OR 97211, USA";
   locationInfo.classList.add('location');
 
-  contentPlace.appendChild(heroText);
-  contentPlace.appendChild(heroSubText);
-  contentPlace.appendChild(locationInfo);
+  contentDiv.appendChild(heroText);
+  contentDiv.appendChild(heroSubText);
+  contentDiv.appendChild(locationInfo);
 };

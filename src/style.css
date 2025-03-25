@@ -99,6 +99,8 @@ nav button:hover,
 /* CONTENT HOME PAGE */
 
 #content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   padding: 2rem 10rem;
 }
@@ -134,9 +136,28 @@ footer {
 /* CONTENT DRINKS PAGE */
 
 #content {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .item-wrapper {
+  width: 200px;
+  height: 300px;
   display: flex;
+  flex-direction: column;
+  background-color: #000000a1;
+  background-color: #7b593d;
+  color: rgb(255, 250, 250);
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  gap: 1rem;
+  align-self: center;
+  align-items: center;
+  
+  /* padding: 2rem; */
+}
+
+.item-image {
+  width: 200px;
 }
