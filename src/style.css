@@ -175,11 +175,20 @@ footer {
   align-self: center;
   align-items: center;
   text-align: center;
+
+  transition: .1s;
+}
+
+.item-wrapper:hover {
+  scale: 1.07;
+  background-color: #34503e;
+  color: white;
 }
 
 .item-image {
   width: 200px;
   border-radius: 15px;
+  border: 2px solid white;
 }
 
 .item-name {
