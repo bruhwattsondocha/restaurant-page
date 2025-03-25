@@ -91,6 +91,10 @@ nav button {
   cursor: pointer;
 }
 
+.current-page {
+  text-decoration: underline 4px #68a07c;
+}
+
 nav button:hover,
 .creds a:hover {
   text-decoration: none;
