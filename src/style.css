@@ -49,9 +49,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background-color: rgba(0, 0, 0, 0.477); */
-  backdrop-filter: blur(2px);
-  backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%) blur(2px);
   color: rgb(235, 235, 235);
 }
 
@@ -105,7 +103,7 @@ nav button {
 }
 
 #content .hero-text {
-  font-size: 120px;
+  font-size: 10vw;
   line-height: 95%;
   width: 100%;
 }
@@ -147,7 +145,8 @@ footer a {
   font-size: 48px;
 }
 
-#content.drinks {
+#content.drinks,
+#content.about {
   background-color: #EBEBEB;
   display: flex;
   flex-direction: column;
@@ -202,6 +201,31 @@ footer a {
   font-size: 14px;
 }
 
-footer.drinks {
+footer.drinks,
+footer.about {
   background-color: white;
+}
+
+/* ABOUT PAGE */
+
+#content.about {
+  gap: .5rem;
+  /* padding-top: 5rem; */
+  padding-bottom: 5rem;
+}
+
+#content .hero-text.about {
+  font-size: 50px;
+  background-color: #34503e;
+  width: fit-content;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+#content .about.text {
+  color: black;
+  font-size: 24px;
+  width: 60ch;
+  align-self: center;
 }

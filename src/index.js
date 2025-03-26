@@ -36,10 +36,11 @@ const switchToTab = (tab) => {
       break;
 
     case 'About':
+      drawAboutPage();
       break;
   }
 }
 
 
+drawAboutPage();
 // drawHomePage();
-// drawDrinksPage();
