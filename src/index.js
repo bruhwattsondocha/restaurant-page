@@ -41,6 +41,6 @@ const switchToTab = (tab) => {
   }
 }
 
-
-drawAboutPage();
-// drawHomePage();
+const homePageRef = document.querySelector('.home');
+drawHomePage();
+highlightTab(homePageRef);
